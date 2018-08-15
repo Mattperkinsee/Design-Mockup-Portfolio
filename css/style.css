@@ -1,0 +1,203 @@
+main,
+body,
+.header,
+.header__inner,
+.featuredWork {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+body {
+    margin: auto;
+}
+
+.header__logo {
+    float: left;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.logo {
+    position: relative;
+}
+
+.header__title {
+    width: 80%;
+    text-align: right;
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom:10px;
+}
+
+.header__inner {
+    width: 80%;
+    
+}
+
+.hexColors {
+    width: 20%;
+}
+
+.emptyHeaderSpace {
+    width: 20%;
+}
+
+#blueSquare {
+    width: 70px;
+    height: 70px;
+    background: #02b3e4;
+}
+
+#graySquare {
+    width: 70px;
+    height: 70px;
+    background: #2d3c49;
+}
+
+#lightblueSquare {
+    width: 70px;
+    height: 70px;
+    background: #7d97ad;
+}
+
+.mainImage,
+.content {
+    width: 80%;
+}
+
+.featuredWork {
+    width: 80%;
+}
+
+#featuredWorkTitle {
+    padding-left: 5px;
+}
+
+.memoryGame,
+.froggerGame,
+.feedReader {
+    width: 100%;
+}
+
+
+/*Text Formatting and Colors*/
+
+.headerText {
+    vertical-align: bottom;
+    line-height: 50px;
+}
+
+.name {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    /*    letter-spacing: .15em;*/
+    line-height: 0px;
+    vertical-align: bottom;
+}
+
+.nameSub {
+    font-size: .7em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Raleway", "Helvetica", sans-serif;
+    color: #3a3a3a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.appTitle {
+    color: #3a3a3a;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: .007em;
+    text-align: center;
+}
+
+h2#featuredWorkTitle {
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: .09em;
+    color: #6a6a6a;
+}
+
+p.appLink {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+
+/*End Text Formatting  and Colors*/
+
+@media only screen and (min-width:768px) {
+    .firstApp, .secondApp, .thirdApp {
+        width: 30%;
+    }
+    .firstApp {
+        padding-right: 5%;
+    }
+    .secondApp {
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    main, body, header {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*Breakpoint for hexcolors*/
+
+@media only screen and (max-width:530px) {
+    .hexColors {
+        width: 100%;
+        order: 1;
+        text-align: center;
+    }
+    #blueSquare,
+    #graySquare,
+    #lightblueSquare {
+        margin: auto;
+    }
+    .header__title,
+    .appLink,
+    h2#featuredWorkTitle {
+        text-align: center;
+    }
+    .mainImage,
+    .content,
+    .featuredWork,
+    .firstApp,
+    .secondApp,
+    .thirdApp {
+        width: 100%;
+    }
+    .header__logo {
+        width: 70%;
+        max-width: 140px;
+        float: none;
+    }
+}
+
+
+/*End Breakpoint for hexcolors*/
