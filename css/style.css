@@ -144,7 +144,7 @@ p.appLink {
 
 
 /*End Text Formatting  and Colors*/
-
+/*Format for tablets*/
 @media only screen and (min-width:768px) {
     .firstApp, .secondApp, .thirdApp {
         width: 30%;
@@ -156,7 +156,7 @@ p.appLink {
         padding-right: 5%;
     }
 }
-
+/*Format for desktop*/
 @media only screen and (min-width:1200px) {
     main, body, header {
         width: 1200px;
@@ -166,7 +166,7 @@ p.appLink {
 }
 
 
-/*Breakpoint for hexcolors*/
+/*Breakpoint for hexcolors and mobile*/
 
 @media only screen and (max-width:530px) {
     .hexColors {
@@ -191,11 +191,15 @@ p.appLink {
     .secondApp,
     .thirdApp {
         width: 100%;
+       
     }
     .header__logo {
         width: 70%;
         max-width: 140px;
         float: none;
+    }
+    .memoryGame, .froggerGame, .feedReader{
+     max-height:230px;
     }
 }
 
