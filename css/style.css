@@ -67,7 +67,7 @@ body {
 }
 
 .featuredWork {
-    width: 80%;
+    width: 100%;
 }
 
 #featuredWorkTitle {
@@ -99,7 +99,7 @@ body {
 
 .nameSub {
     font-size: .7em;
-    font-weight: 200;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -122,24 +122,26 @@ a {
 .appTitle {
     color: #3a3a3a;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.5em;
     letter-spacing: .007em;
     text-align: center;
 }
 
 h2#featuredWorkTitle {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2em;
     letter-spacing: .09em;
-    color: #6a6a6a;
+    color: #3a3a3a;
 }
+
 
 p.appLink {
     overflow-wrap: break-word;
     word-wrap: break-word;
     text-align: center;
-    color: #3a3a3a;
+    color: white;
+    background-color: #2d3c49;
 }
 
 
@@ -155,14 +157,21 @@ p.appLink {
     .secondApp {
         padding-right: 5%;
     }
+     section.featuredWork_title{
+    width:80%;
 }
-/*Format for desktop*/
+}
+/*Format for desktop amd laptop*/
 @media only screen and (min-width:1200px) {
     main, body, header {
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
+      section.featuredWork_title{
+    width:80%;
+}
+  
 }
 
 
@@ -205,3 +214,27 @@ p.appLink {
 
 
 /*End Breakpoint for hexcolors*/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
