@@ -33,7 +33,7 @@ a.fa.fa-facebook,
 a.fa.fa-envelope,
 a.fa.fa-comments,
 a.fa.fa-phone {
-    margin:10px;
+    margin: 10px;
     font-size: 30px !important;
     width: 30px;
     text-align: center;
@@ -413,9 +413,9 @@ img.animated.fadeInDown.header__logo {
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 120px;
+    right: 425px;
+    font-size: 90px;
 }
 
 
@@ -437,6 +437,7 @@ i.fa.fa-bars {
     width: 100%;
     position: relative;
     right: 30px;
+    z-index: 1;
 }
 
 div.sticky {
@@ -467,87 +468,131 @@ div.sticky {
     background-color: #efd04f;
     color: #3a3a3a;
 }
-@mixin center(){
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-    left:50%;
-    top:50%;
+
+@mixin center() {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
 }
-* {box-sizing: border-box;}
+
+* {
+    box-sizing: border-box;
+}
+
 
 /* Style the input container */
+
 .input-container {
-  display: flex;
-  width: 100%;
-  margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
 }
+
 
 /* Style the form icons */
+
 .icon {
-  padding: 10px;
-  background: dodgerblue;
-  color: #fff;
-  min-width: 50px;
-  text-align: center;
+    padding: 10px;
+    background: dodgerblue;
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
 }
 
+
 /* Style the input fields */
+
 .input-field {
-  width: 100%;
-  padding: 10px;
-  outline: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
 }
 
 .input-field:focus {
-  border: 2px solid dodgerblue;
+    border: 2px solid dodgerblue;
 }
 
+
 /* Set a style for the submit button */
+
 .btn {
-  background-color: dodgerblue;
-  color: #fff;
-  padding: 15px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
 }
 
 .btn:hover {
-  opacity: 1;
+    opacity: 1;
 }
+
 .container.contactForm {
     width: 80%;
 }
-#contactTitle{
-    text-align: center;
-}
-#demoBtn, #gitBtn{
-    background-color:#3a3a3a;
-    border-style: none;
-    border-width:1px;
-    color:#fafafa;
-    padding-left:30px;
-    padding-right:30px;
-    padding-top:10px;
-    padding-bottom:10px;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom:20px;
-    text-align: center; 
-    text-transform: uppercase;
-     font-weight:800;
-}
-#demoBtn:hover, #gitBtn:hover{
-    background-color:#efd04f;
-    color:#3a3a3a;
-   cursor: pointer;
-  
-    
-    margin-left:auto;
-    margin-right:auto;  
-}
-.projectTitles{
+
+#contactTitle {
     text-align: center;
 }
 
+#demoBtn,
+#gitBtn {
+    background-color: #3a3a3a;
+    border-style: none;
+    border-width: 1px;
+    color: #fafafa;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#demoBtn:hover,
+#gitBtn:hover {
+    background-color: #efd04f;
+    color: #3a3a3a;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectTitles {
+    text-align: center;
+}
+
+
+/*only show left and right covers on bigger screens*/
+
+@media screen and (min-width: 1600px) {
+    .leftCover {
+        height: 100%;
+        width: 15%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    .rightCover {
+        height: 100%;
+        width: 15%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+}
