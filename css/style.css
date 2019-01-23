@@ -238,7 +238,7 @@ img.animated.fadeInDown.header__logo {
     .secondApp,
     .fourthApp,
     .fifthApp {
-        padding-right: 5%;
+        margin-right: 5%;
     }
     section.featuredWork_title {
         width: 80%;
@@ -487,7 +487,7 @@ div.sticky {
 .icon {
   padding: 10px;
   background: dodgerblue;
-  color: white;
+  color: #fff;
   min-width: 50px;
   text-align: center;
 }
@@ -506,7 +506,7 @@ div.sticky {
 /* Set a style for the submit button */
 .btn {
   background-color: dodgerblue;
-  color: white;
+  color: #fff;
   padding: 15px 20px;
   border: none;
   cursor: pointer;
@@ -521,6 +521,33 @@ div.sticky {
     width: 80%;
 }
 #contactTitle{
+    text-align: center;
+}
+#demoBtn, #gitBtn{
+    background-color:#3a3a3a;
+    border-style: none;
+    border-width:1px;
+    color:#fafafa;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom:20px;
+    text-align: center; 
+    text-transform: uppercase;
+     font-weight:800;
+}
+#demoBtn:hover, #gitBtn:hover{
+    background-color:#efd04f;
+    color:#3a3a3a;
+   cursor: pointer;
+  
+    
+    margin-left:auto;
+    margin-right:auto;  
+}
+.projectTitles{
     text-align: center;
 }
 

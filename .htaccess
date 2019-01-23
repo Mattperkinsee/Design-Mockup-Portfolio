@@ -1,0 +1,6 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^themattperkins.com [NC]
+RewriteRule ^(.*)$ http://www.themattperkins.com/$1 [L,R=301,NC]
+
+Header set Referrer-Policy "origin"
