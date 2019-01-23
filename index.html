@@ -5,16 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?ver=1.01">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
+
     <title>Matt Perkins Front-End Ninja</title>
 </head>
 
 <body>
     <header class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About Me</a>
+                <a href="#">My Stuff</a>
+                <a href="#">Contact Me</a>
+            </div>
+
+        </div>
+
+        <i onclick="openNav()" class="fa fa-bars" style="font-size:48px;color:white"></i>
         <div class="emptyHeaderSpace">
         </div>
         <div class="header__inner">
@@ -24,45 +39,56 @@
                 </span>
                 <h1 class="headerText animated fadeInDown">
                     <span class="name">Matt Perkins<br></span>
-                    <span class="nameSub">Front-End Ninja</span>
+                    <span class="nameSub">
+                        <span style="color:#efd04f;font-weight:500;text-transform: uppercase">Front-End </span>
+                        Ninja</span>
                 </h1>
+                <a href="https://www.linkedin.com/in/mperkins109/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/Mattperkinsee" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.facebook.com/matthew.perkins.5268" target="_blank" class="fa fa-facebook"></a>
+                <a href="mailto:mattperkinsee@gmail.com" target="_top" class="fa fa-envelope"></a>
+                <a href="sms:3366828095" target="_top" class="fa fa-comments"></a>
+                <a href="tel:3366828095" target="_top" class="fa fa-phone"></a>
             </div>
         </div>
     </header>
+
+
+
     <main>
         <section class="animated fadeInLeft hexColors">
             <div id="blueSquare">
             </div>
-            <h2 class="hexText">#02b3e4</h2>
+            <h2 class="hexText">#efd04f</h2>
             <div id="graySquare">
             </div>
-            <h2 class="hexText">#2d3c49</h2>
-            <div id="lightblueSquare">
+            <h2 class="hexText">#3a3a3a</h2>
+            <div id="lightwhiteSquare">
             </div>
-            <h2 class="hexText"> #7d97ad</h2>
+            <h2 class="hexText"> #fafafa</h2>
         </section>
+
         <div class="content">
-            <img class="mainImage animated fadeIn" srcset="
-             img/laptop-3190194_1920.jpg 320w,
-             img/laptop-3190194_1920.jpg 640w,
-             img/laptop-3190194_1920.jpg 800w" sizes="(max-width: 320px) 280px,
-            (max-width: 640px) 600px,
-            (max-width: 800px) 800px" src="img/laptop-3190194_1920.jpg" alt="Main Picture">
+            <div class="container">
+                <p class=" content animated fadeIn">Welcome to my little corner of the Internet! My name is
+                    <a href="mailto:mattperkinsee@gmail.com">
+                        <span style="color:#efd04f;font-weight:500;text-transform: uppercase;font-size:20px;">Matt Perkins</span></a>. I enjoy creating and designing websites in my spare time and helping the occasional local business create a better experience for their clients.
+                    <br>
+                    <br> I have many other hobbies I enjoy such as playing and creating video games, board games, movies, playing guitar, and DIY home improvements.</p>
+            </div>
             <section class="featuredWork_title">
                 <h2 id="featuredWorkTitle">Featured Work</h2>
                 <section class="featuredWork">
                     <div class="firstApp animated rotateInUpRight">
                         <a href="https://github.com/Mattperkinsee/JS-Memory-Game" target="_blank">
-                            <img class="memoryGame" src="img/memorygame.jpg" alt="memory game">
-                            <h3 class="appTitle">Memory game</h3>
-                            <p class="appLink">https://github.com/Mattperkinsee/JS-Memory-Game</p>
+                            <img class="restaurantApp" src="img/memorygame.jpg" alt="restaurant app">
+                            <h3 class="appTitle">Memory Game</h3>
                         </a>
                     </div>
                     <div class="secondApp animated slideInUp">
-                        <a href="https://github.com/Mattperkinsee" target="_blank">
+                        <a href="https://github.com/Mattperkinsee/Feedreader-Tester" target="_blank">
                             <img class="feedReader" src="img/feedtest.jpg" alt="feed reader">
                             <h3 class="appTitle">Feed Testing</h3>
-                            <p class="appLink">https://github.com/Mattperkinsee/JS-Memory-Game</p>
                         </a>
 
                     </div>
@@ -71,15 +97,64 @@
                         <a href="https://github.com/Mattperkinsee/JS-Frogger-Game" target="_blank">
                             <img class="froggerGame" src="img/froggergame.jpg" alt="frogger game">
                             <h3 class="appTitle">Frogger Game</h3>
-                            <div>
-                                <p class="appLink">https://github.com/Mattperkinsee/JS-Memory-Game</p>
-                            </div>
+
                         </a>
                     </div>
                 </section>
+                <section class="featuredWork">
+                    <div class="fourthApp animated rotateInUpRight">
+                        <a href="https://github.com/Mattperkinsee/Restaurant-App" target="_blank">
+                            <img class="restaurantApp" src="img/restaurantreview.jpg" alt="restaurant app">
+                            <h3 class="appTitle">Restaurant App</h3>
+                        </a>
+                    </div>
+                    <div class="fifthApp animated slideInUp">
+                        <a href="https://www.skydivelittlewashington.com/" target="_blank">
+                            <img class="skydive" src="img/sky.jpg" alt="skydive wordpress site">
+                            <h3 class="appTitle">Skydive Wordpress Site</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="sixthApp animated rotateInUpLeft">
+                        <a href="https://www.rpphotobooths.com/" target="_blank">
+                            <img class="photobooth" src="img/rp.jpg" alt="photo booth wordpress site">
+                            <h3 class="appTitle">Photo Booth Wordpress Site</h3>
+
+                        </a>
+                    </div>
+
+                </section>
             </section>
+           
+            <!--
+            <div class="container contactForm">
+                <form action="/action_page.php">
+                    <h2 id="contactTitle">Contact Me</h2>
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Name" name="username">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-comments icon"></i>
+                        <input class="input-field" type="text" placeholder="Your Message" name="subject">
+                    </div>
+
+                    <button type="submit" class="btn">Contact Me</button>
+                </form>
+            </div>
+-->
         </div>
+        <i id="scrollTopBtn" title="Go to top" onclick="topFunction()" class="fa fa-arrow-up"></i>
     </main>
 </body>
+
+<footer>&copy; Copyright <span style="color:#efd04f;">2019</span> Matthew Perkins</footer>
 
 </html>

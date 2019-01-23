@@ -6,12 +6,61 @@ body,
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #fafafa;
 }
 
 body {
     margin: auto;
+    background-image: url("../img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 10px;
 }
+
+footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: 'Raleway';
+}
+
+
+/* Style all font awesome icons */
+
+a.fa.fa-linkedin,
+a.fa.fa-github,
+a.fa.fa-facebook,
+a.fa.fa-envelope,
+a.fa.fa-comments,
+a.fa.fa-phone {
+    margin:10px;
+    font-size: 30px !important;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%
+}
+
+
+/* Add a hover effect if you want */
+
+a.fa.fa-linkedin:hover,
+a.fa.fa-github:hover,
+a.fa.fa-facebook:hover,
+a.fa.fa-envelope:hover,
+a.fa.fa-comments:hover,
+a.fa.fa-phone:hover {
+    opacity: 1;
+    color: #efd04f;
+    transition-duration: .5s;
+    border-radius: 50%
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
 
 .header__logo {
     float: left;
@@ -26,13 +75,12 @@ body {
 .header__title {
     width: 80%;
     text-align: right;
-    border-bottom: 2px solid #3a3a3a;
-    margin-bottom:10px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
 }
 
 .header__inner {
     width: 80%;
-    
 }
 
 .hexColors {
@@ -46,19 +94,19 @@ body {
 #blueSquare {
     width: 70px;
     height: 70px;
-    background: #02b3e4;
+    background: #efd04f;
 }
 
 #graySquare {
     width: 70px;
     height: 70px;
-    background: #2d3c49;
+    background: #3a3a3a;
 }
 
-#lightblueSquare {
+#lightwhiteSquare {
     width: 70px;
     height: 70px;
-    background: #7d97ad;
+    background: #fafafa;
 }
 
 .mainImage,
@@ -72,12 +120,26 @@ body {
 
 #featuredWorkTitle {
     padding-left: 5px;
+    text-align: right;
 }
 
 .memoryGame,
 .froggerGame,
-.feedReader {
+.feedReader,
+.restaurantApp,
+.skydive,
+.photobooth {
     width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.memoryGame:hover,
+.froggerGame:hover,
+.feedReader:hover,
+.restaurantApp:hover,
+.skydive:hover,
+.photobooth:hover {
+    transform: scale(1.1);
 }
 
 
@@ -112,7 +174,7 @@ h5,
 h6,
 a {
     font-family: "Raleway", "Helvetica", sans-serif;
-    color: #3a3a3a;
+    color: #fff;
 }
 
 a {
@@ -120,21 +182,27 @@ a {
 }
 
 .appTitle {
-    color: #3a3a3a;
-    text-transform: uppercase;
+    color: #fafafa;
+    text-transform: capitalize;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1em;
     letter-spacing: .007em;
     text-align: center;
 }
 
 h2#featuredWorkTitle {
     font-weight: 500;
-    font-size: 2em;
-    letter-spacing: .09em;
-    color: #3a3a3a;
+    font-size: 1.5em;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #efd04f;
+    text-align: center;
 }
 
+h2.hexText {
+    font-size: 1em;
+}
 
 p.appLink {
     overflow-wrap: break-word;
@@ -144,34 +212,53 @@ p.appLink {
     background-color: #2d3c49;
 }
 
+p.content.animated.fadeIn {
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+img.animated.fadeInDown.header__logo {
+    margin-top: 60px;
+}
+
 
 /*End Text Formatting  and Colors*/
+
+
 /*Format for tablets*/
+
 @media only screen and (min-width:768px) {
-    .firstApp, .secondApp, .thirdApp {
+    .firstApp, .secondApp, .thirdApp, .fourthApp, .fifthApp, .sixthApp {
         width: 30%;
     }
-    .firstApp {
+    .firstApp,
+    .secondApp,
+    .fourthApp,
+    .fifthApp {
         padding-right: 5%;
     }
-    .secondApp {
-        padding-right: 5%;
+    section.featuredWork_title {
+        width: 80%;
     }
-     section.featuredWork_title{
-    width:80%;
 }
-}
+
+
 /*Format for desktop amd laptop*/
+
 @media only screen and (min-width:1200px) {
     main, body, header {
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
+        padding: 30px;
+        border-radius: 30px;
     }
-      section.featuredWork_title{
-    width:80%;
-}
-  
+    section.featuredWork_title {
+        width: 80%;
+    }
 }
 
 
@@ -185,7 +272,7 @@ p.appLink {
     }
     #blueSquare,
     #graySquare,
-    #lightblueSquare {
+    #lightwhiteSquare {
         margin: auto;
     }
     .header__title,
@@ -200,41 +287,240 @@ p.appLink {
     .secondApp,
     .thirdApp {
         width: 100%;
-       
     }
     .header__logo {
         width: 70%;
         max-width: 140px;
         float: none;
     }
-    .memoryGame, .froggerGame, .feedReader{
-     max-height:230px;
+    .memoryGame,
+    .froggerGame,
+    .feedReader,
+    .restaurantApp,
+    .skydive,
+    .photobooth {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    section.featuredWork {
+        text-align: center;
+        justify-content: center;
+    }
+    p.content.animated.fadeIn {
+        text-align: left;
+        width: auto;
+    }
+    .header__title,
+    .header__inner {
+        width: 100%;
+    }
+    .emptyHeaderSpace {
+        display: none;
     }
 }
 
 
 /*End Breakpoint for hexcolors*/
 
+
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
+
+@media only screen and (max-width: 768px) {
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
 }
+
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+i.fa.fa-bars {
+    text-align: right;
+    width: 100%;
+    position: relative;
+    right: 30px;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 50px;
+    font-size: 20px;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #3a3a3a;
+    color: #fafafa;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #efd04f;
+    color: #3a3a3a;
+}
+@mixin center(){
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+}
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.container.contactForm {
+    width: 80%;
+}
+#contactTitle{
+    text-align: center;
+}
+
