@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css?ver=1.04">
+    <link rel="stylesheet" href="css/style.css?ver=1.07">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
@@ -13,7 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133188133-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133188133-1');
+    </script>
     <title>Matt Perkins Front-End Ninja</title>
 </head>
 
@@ -28,9 +39,12 @@
             </div>
 
         </div>
+         <div class="container">
+             
+         </div>
 
         <i onclick="openNav()" class="fa fa-bars" style="font-size:48px;color:white"></i>
-      
+
         <div class="leftCover">
         </div>
         <div class="rightCover">
@@ -49,12 +63,14 @@
                         <span style="color:#efd04f;font-weight:500;text-transform: uppercase">Front-End </span>
                         Ninja</span>
                 </h1>
-                <a href="https://www.linkedin.com/in/mperkins109/" target="_blank" class="fa fa-linkedin"></a>
-                <a href="https://github.com/Mattperkinsee" target="_blank" class="fa fa-github"></a>
-                <a href="https://www.facebook.com/matthew.perkins.5268" target="_blank" class="fa fa-facebook"></a>
-                <a href="mailto:mattperkinsee@gmail.com" target="_top" class="fa fa-envelope"></a>
-                <a href="sms:3366828095" target="_top" class="fa fa-comments"></a>
-                <a href="tel:3366828095" target="_top" class="fa fa-phone"></a>
+                <div class="container">
+                    <a href="https://www.linkedin.com/in/mperkins109/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/Mattperkinsee" target="_blank" class="fa fa-github"></a>
+                    <a href="https://www.facebook.com/matthew.perkins.5268" target="_blank" class="fa fa-facebook"></a>
+                    <a href="mailto:mattperkinsee@gmail.com" target="_top" class="fa fa-envelope"></a>
+                    <a href="sms:3366828095" target="_top" class="fa fa-comments"></a>
+                    <a href="tel:3366828095" target="_top" class="fa fa-phone"></a>
+                </div>
             </div>
         </div>
     </header>
@@ -90,7 +106,7 @@
                         <img class="restaurantApp" src="img/memorygame.jpg" alt="restaurant app">
                         <div class="projectTitles">
                             <h3 class="appTitle">Memory Game <br>(Sept. 2018) </h3>
-                            
+
                             <a href="https://www.themattperkins.com/JS-Memory-Game/" target="_blank">
                                 <button type="button" id="demoBtn">Demo</button>
                             </a>
@@ -169,6 +185,60 @@
                         </div>
 
                     </div>
+                    
+                    
+
+                </section>
+                
+                <section class="featuredWork">
+<!--
+                    <div class="fourthApp animated rotateInUpRight">
+
+                        <img class="restaurantApp" src="img/restaurantreview.jpg" alt="restaurant app">
+
+                        <div class="projectTitles">
+                            <h3 class="appTitle">Restaurant App <br>(Nov. 2018)</h3>
+                            <a href="https://www.themattperkins.com/Restaurant-App" target="_blank">
+                                <button type="button" id="demoBtn">Demo</button>
+                            </a>
+                            <a href="https://github.com/Mattperkinsee/Restaurant-App" target="_blank">
+                                <button type="button" id="gitBtn">GitHub</button>
+                            </a>
+                        </div>
+                    </div>
+-->
+                    <div class="fifthApp animated slideInUp">
+
+                        <img class="skydive" src="img/odfl.jpg" alt="odfl">
+
+                        <div class="projectTitles">
+                            <h3 class="appTitle">ODFL <br>(Jan. 2019)</h3>
+                            <a href="https://www.themattperkins.com/ODFL/Home" target="_blank">
+                                <button type="button" id="demoBtn">Demo</button>
+                            </a>
+                             <a href="https://github.com/Mattperkinsee/ODFL" target="_blank">
+                                <button type="button" id="gitBtn">GitHub</button>
+                            </a>
+                        </div>
+
+                    </div>
+
+<!--
+                    <div class="sixthApp animated rotateInUpLeft">
+
+                        <img class="photobooth" src="img/rp.jpg" alt="photo booth wordpress site">
+
+                        <div class="projectTitles">
+                            <h3 class="appTitle">Photo Booth Wordpress <br>(Jan. 2019)</h3>
+                            <a href="https://www.rpphotobooths.com/" target="_blank">
+                                <button type="button" id="demoBtn">Demo</button>
+                            </a>
+                        </div>
+
+                    </div>
+                    
+-->
+                    
 
                 </section>
             </section>

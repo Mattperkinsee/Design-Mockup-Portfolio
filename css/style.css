@@ -221,132 +221,11 @@ p.content.animated.fadeIn {
 }
 
 img.animated.fadeInDown.header__logo {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 
 /*End Text Formatting  and Colors*/
-
-
-/*Format for tablets*/
-
-@media only screen and (min-width:768px) {
-    .firstApp, .secondApp, .thirdApp, .fourthApp, .fifthApp, .sixthApp {
-        width: 30%;
-    }
-    .firstApp,
-    .secondApp,
-    .fourthApp,
-    .fifthApp {
-        margin-right: 5%;
-    }
-    section.featuredWork_title {
-        width: 80%;
-    }
-}
-
-
-/*Format for desktop amd laptop*/
-
-@media only screen and (min-width:1200px) {
-    main, body, header {
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 30px;
-        border-radius: 30px;
-    }
-    section.featuredWork_title {
-        width: 80%;
-    }
-}
-
-
-/*Breakpoint for hexcolors and mobile*/
-
-@media only screen and (max-width:530px) {
-    .hexColors {
-        width: 100%;
-        order: 1;
-        text-align: center;
-    }
-    #blueSquare,
-    #graySquare,
-    #lightwhiteSquare {
-        margin: auto;
-    }
-    .header__title,
-    .appLink,
-    h2#featuredWorkTitle {
-        text-align: center;
-    }
-    .mainImage,
-    .content,
-    .featuredWork,
-    .firstApp,
-    .secondApp,
-    .thirdApp {
-        width: 100%;
-    }
-    .header__logo {
-        width: 70%;
-        max-width: 140px;
-        float: none;
-    }
-    .memoryGame,
-    .froggerGame,
-    .feedReader,
-    .restaurantApp,
-    .skydive,
-    .photobooth {
-        max-height: 300px;
-        max-width: 300px;
-    }
-    section.featuredWork {
-        text-align: center;
-        justify-content: center;
-    }
-    p.content.animated.fadeIn {
-        text-align: left;
-        width: auto;
-    }
-    .header__title,
-    .header__inner {
-        width: 100%;
-    }
-    .emptyHeaderSpace {
-        display: none;
-    }
-}
-
-
-/*End Breakpoint for hexcolors*/
-
-
-/* Small Devices, Tablets */
-
-@media only screen and (max-width: 768px) {
-    .animated {
-        /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
-        -webkit-transition-property: none !important;
-        transition-property: none !important;
-        /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -webkit-transform: none !important;
-        transform: none !important;
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
-    }
-}
 
 
 /* The Overlay (background) */
@@ -413,32 +292,13 @@ img.animated.fadeInDown.header__logo {
 
 .overlay .closebtn {
     position: absolute;
-    top: 120px;
-    right: 425px;
+    top: 60px;
+    z-index: 11;
+    right: 30px;
     font-size: 90px;
 }
 
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-i.fa.fa-bars {
-    text-align: right;
-    width: 100%;
-    position: relative;
-    right: 30px;
-    z-index: 1;
-}
 
 div.sticky {
     position: -webkit-sticky;
@@ -569,6 +429,52 @@ div.sticky {
     text-align: center;
 }
 
+i.fa.fa-bars {
+    text-align: right;
+    position: fixed;
+    right: 30px;
+    z-index:10;
+    font-size:24px !important;
+    visibility: hidden;
+}
+i.fa.fa-bars:hover {
+    cursor: pointer
+}
+
+
+/*Format for tablets*/
+
+@media only screen and (min-width:768px) {
+    .firstApp, .secondApp, .thirdApp, .fourthApp, .fifthApp, .sixthApp {
+        width: 30%;
+    }
+    .firstApp,
+    .secondApp,
+    .fourthApp,
+    .fifthApp {
+        margin-right: 5%;
+    }
+    section.featuredWork_title {
+        width: 80%;
+    }
+}
+
+
+/*Format for desktop amd laptop*/
+
+@media only screen and (min-width:1200px) {
+    main, body, header {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+        border-radius: 30px;
+    }
+    section.featuredWork_title {
+        width: 80%;
+    }
+}
+
 
 /*only show left and right covers on bigger screens*/
 
@@ -581,6 +487,7 @@ div.sticky {
         top: 0;
         left: 0;
         background-color: #111;
+        opacity: .85;
         overflow-x: hidden;
         padding-top: 20px;
     }
@@ -592,7 +499,123 @@ div.sticky {
         top: 0;
         right: 0;
         background-color: #111;
+        opacity: .85;
         overflow-x: hidden;
         padding-top: 20px;
     }
+    i.fa.fa-bars {
+        text-align: right;
+        position: fixed;
+        right: 300px;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 60px;
+        z-index: 11;
+        right: 300px;
+        font-size: 90px;
+    }
 }
+
+
+/*Breakpoint for hexcolors and mobile*/
+
+@media only screen and (max-width:530px) {
+    .hexColors {
+        width: 100%;
+        order: 1;
+        text-align: center;
+    }
+    #blueSquare,
+    #graySquare,
+    #lightwhiteSquare {
+        margin: auto;
+    }
+    .header__title,
+    .appLink,
+    h2#featuredWorkTitle {
+        text-align: center;
+    }
+    .mainImage,
+    .content,
+    .featuredWork,
+    .firstApp,
+    .secondApp,
+    .thirdApp {
+        width: 100%;
+    }
+    .header__logo {
+        width: 70%;
+        max-width: 140px;
+        float: none;
+    }
+    .memoryGame,
+    .froggerGame,
+    .feedReader,
+    .restaurantApp,
+    .skydive,
+    .photobooth {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    section.featuredWork {
+        text-align: center;
+        justify-content: center;
+    }
+    p.content.animated.fadeIn {
+        text-align: left;
+        width: auto;
+    }
+    .header__title,
+    .header__inner {
+        width: 100%;
+    }
+    .emptyHeaderSpace {
+        display: none;
+    }
+    h1.headerText.animated.fadeInDown {
+        position: fixed;
+        top: -20px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, .3);
+        left: 0;
+        width: 100%;
+    }
+}
+
+
+/*End Breakpoint for hexcolors*/
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    i.fa.fa-bars {
+       
+        visibility: visible;
+    }
+    
+}
+
+
+/****END MEDIA QUERIES***/
