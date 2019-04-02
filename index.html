@@ -1,249 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css?ver=1.07">
-    <link rel="stylesheet" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/style.css?ver=1.07" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133188133-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-133188133-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-133188133-1');
+      gtag("config", "UA-133188133-1");
     </script>
     <title>Matt Perkins Front-End Ninja</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">About Me</a>
-                <a href="#">My Stuff</a>
-                <a href="#">Contact Me</a>
-            </div>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#">About Me</a>
+          <a href="#">My Stuff</a>
+          <a href="#">Contact Me</a>
+        </div>
+      </div>
+      <div class="container"></div>
 
-        </div>
-         <div class="container">
-             
-         </div>
+      <i
+        onclick="openNav()"
+        class="fa fa-bars"
+        style="font-size:48px;color:white"
+      ></i>
 
-        <i onclick="openNav()" class="fa fa-bars" style="font-size:48px;color:white"></i>
+      <div class="leftCover"></div>
+      <div class="rightCover"></div>
 
-        <div class="leftCover">
+      <div class="emptyHeaderSpace"></div>
+      <div class="header__inner">
+        <div class="header__title">
+          <span class="logo">
+            <img
+              class="animated fadeInDown header__logo"
+              src="img/avatar.jpg"
+              alt="matt logo"
+            />
+          </span>
+          <h1 class="headerText animated fadeInDown">
+            <span class="name">Matt Perkins<br /></span>
+            <span class="nameSub">
+              <span
+                style="color:#efd04f;font-weight:500;text-transform: uppercase"
+                >Front-End
+              </span>
+              Ninja</span
+            >
+          </h1>
+          <div class="container">
+            <a
+              href="https://www.linkedin.com/in/mperkins109/"
+              target="_blank"
+              class="fa fa-linkedin"
+            ></a>
+            <a
+              href="https://github.com/Mattperkinsee"
+              target="_blank"
+              class="fa fa-github"
+            ></a>
+            <a
+              href="mailto:mattperkinsee@gmail.com"
+              target="_top"
+              class="fa fa-envelope"
+            ></a>
+            <a href="sms:3366828095" target="_top" class="fa fa-comments"></a>
+            <a href="tel:3366828095" target="_top" class="fa fa-phone"></a>
+          </div>
         </div>
-        <div class="rightCover">
-        </div>
-
-        <div class="emptyHeaderSpace">
-        </div>
-        <div class="header__inner">
-            <div class="header__title">
-                <span class="logo">
-                <img class="animated fadeInDown header__logo" src="img/avatar.jpg" alt="matt logo">
-                </span>
-                <h1 class="headerText animated fadeInDown">
-                    <span class="name">Matt Perkins<br></span>
-                    <span class="nameSub">
-                        <span style="color:#efd04f;font-weight:500;text-transform: uppercase">Front-End </span>
-                        Ninja</span>
-                </h1>
-                <div class="container">
-                    <a href="https://www.linkedin.com/in/mperkins109/" target="_blank" class="fa fa-linkedin"></a>
-                    <a href="https://github.com/Mattperkinsee" target="_blank" class="fa fa-github"></a>
-                    <a href="mailto:mattperkinsee@gmail.com" target="_top" class="fa fa-envelope"></a>
-                    <a href="sms:3366828095" target="_top" class="fa fa-comments"></a>
-                    <a href="tel:3366828095" target="_top" class="fa fa-phone"></a>
-                </div>
-            </div>
-        </div>
+      </div>
     </header>
 
-
-
     <main>
-        <section class="animated fadeInLeft hexColors">
-            <div id="blueSquare">
-            </div>
-            <h2 class="hexText">#efd04f</h2>
-            <div id="graySquare">
-            </div>
-            <h2 class="hexText">#3a3a3a</h2>
-            <div id="lightwhiteSquare">
-            </div>
-            <h2 class="hexText"> #fafafa</h2>
-        </section>
+      <section class="animated fadeInLeft hexColors">
+        <div id="blueSquare"></div>
+        <h2 class="hexText">#efd04f</h2>
+        <div id="graySquare"></div>
+        <h2 class="hexText">#3a3a3a</h2>
+        <div id="lightwhiteSquare"></div>
+        <h2 class="hexText">#fafafa</h2>
+      </section>
 
-        <div class="content">
-            <div class="container">
-                <p class=" content animated fadeIn">Welcome to my little corner of the Internet! My name is
-                    <a href="mailto:mattperkinsee@gmail.com">
-                        <span style="color:#efd04f;font-weight:500;text-transform: uppercase;font-size:20px;">Matt Perkins</span></a>. I enjoy creating and designing websites in my spare time and helping the occasional local business create a better experience for their clients.
-                    <br>
-                    <br> I have many other hobbies I enjoy such as playing and creating video games, board games, movies, playing guitar, and DIY home improvements.</p>
-            </div>
-            <section class="featuredWork_title">           
-                <h2 id="featuredWorkTitle">Recent Featured Work</h2>
-                <section class="featuredWork">
-                    <div class="firstApp animated rotateInUpRight">
-
-                        <img class="thumbnail" src="img/memorygame.jpg" alt="restaurant app">
-                        <div class="projectTitles">
-                            <h3 class="appTitle">Memory Game <br>(Sept. 2018) </h3>
-
-                            <a href="https://www.themattperkins.com/JS-Memory-Game/" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                            <a href="https://github.com/Mattperkinsee/JS-Memory-Game" target="_blank">
-                                <button type="button" id="gitBtn">GitHub</button>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="secondApp animated slideInUp">
-
-                        <img class="thumbnail" src="img/feedtest.jpg" alt="feedreader">
-                        <div class="projectTitles">
-                            <h3 class="appTitle">Feedreader Tester <br>(Oct. 2018)</h3>
-                            <a href="https://www.themattperkins.com/Feedreader-Tester/" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                            <a href="https://github.com/Mattperkinsee/Feedreader-Tester" target="_blank">
-                                <button type="button" id="gitBtn">GitHub</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="thirdApp animated rotateInUpLeft">
-
-                        <img class="thumbnail" src="img/froggergame.jpg" alt="frogger game">
-
-                        <div class="projectTitles">
-                            <h3 class="appTitle">Frogger Game <br>(Oct. 2018)</h3>
-                            <a href="https://www.themattperkins.com/JS-Frogger-Game" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                            <a href="https://github.com/Mattperkinsee/JS-Frogger-Game" target="_blank">
-                                <button type="button" id="gitBtn">GitHub</button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <section class="featuredWork">
-                    <div class="firstApp animated rotateInUpRight">
-
-                        <img class="thumbnail" src="img/restaurantreview.jpg" alt="restaurant app">
-
-                        <div class="projectTitles">
-                            <h3 class="appTitle">Restaurant App <br>(Nov. 2018)</h3>
-                            <a href="https://www.themattperkins.com/Restaurant-App" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                            <a href="https://github.com/Mattperkinsee/Restaurant-App" target="_blank">
-                                <button type="button" id="gitBtn">GitHub</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="secondApp animated slideInUp">
-
-                        <img class="thumbnail" src="img/sky.jpg" alt="skydive wordpress site">
-
-                        <div class="projectTitles">
-                            <h3 class="appTitle">Skydive Wordpress Site <br>(Dec. 2018)</h3>
-                            <a href="https://www.skydivelittlewashington.com/" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="thirdApp animated rotateInUpLeft">
-
-                        <img class="thumbnail" src="img/rp.jpg" alt="photo booth wordpress site">
-
-                        <div class="projectTitles">
-                            <h3 class="appTitle">Photo Booth Wordpress <br>(Jan. 2019)</h3>
-                            <a href="https://www.rpphotobooths.com/" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                        </div>
-
-                    </div>
-                    
-                    
-
-                </section>
-                
-                <section class="featuredWork">
-
-                    <div class="firstApp animated rotateInUpRight">
-
-                        <img class="thumbnail" src="img/odfl.jpg" alt="old dominion website">
-
-                        <div class="projectTitles">
-                            <h3 class="appTitle">ODFL <br>(Jan. 2019)</h3>
-                            <a href="https://www.themattperkins.com/ODFL/Home" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                             <a href="https://github.com/Mattperkinsee/ODFL" target="_blank">
-                                <button type="button" id="gitBtn">GitHub</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="secondApp animated slideInUp">
-
-                        <img class="thumbnail" src="img/counter.jpg" alt="react counter app">
-
-                        <div class="projectTitles">
-                            <h3 class="appTitle">React Counter App <br>(March. 2019)</h3>
-                            <a href="https://www.themattperkins.com/React-Counter-App/build" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                             <a href="https://github.com/Mattperkinsee/counter-app" target="_blank">
-                                <button type="button" id="gitBtn">GitHub</button>
-                            </a>
-                        </div>
-
-                    </div>
-
-
-                    <div class="thirdApp animated rotateInUpLeft">
-
-                        <img class="thumbnail" src="img/silversky.jpg" alt="silver sky organics wordpress site">
-
-                        <div class="projectTitles">
-                            <h3 class="appTitle">Silver Sky Organics Wordpress <br>(Jan. 2019)</h3>
-                            <a href="https://www.silverskyorganics.com" target="_blank">
-                                <button type="button" id="demoBtn">Demo</button>
-                            </a>
-                        </div>
-
-                    </div>     
-
-                </section>
-            </section>
-
+      <div class="content">
+        <div class="container">
+          <p class=" content animated fadeIn">
+            Welcome to my little corner of the Internet! My name is
+            <a href="mailto:mattperkinsee@gmail.com">
+              <span
+                style="color:#efd04f;font-weight:500;text-transform: uppercase;font-size:20px;"
+                >Matt Perkins</span
+              ></a
+            >. I enjoy creating and designing websites in my spare time and
+            helping the occasional local business create a better experience for
+            their clients.
+            <br />
+            <br />
+            I have many other hobbies I enjoy such as playing and creating video
+            games, board games, movies, playing guitar, and DIY home
+            improvements.
+          </p>
         </div>
-        <i id="scrollTopBtn" title="Go to top" onclick="topFunction()" class="fa fa-arrow-up"></i>
+        <section class="featuredWork_title">
+          <h2 id="featuredWorkTitle">Recent Featured Work</h2>
+          <section class="featuredWork">
+            <div class="firstApp animated rotateInUpRight">
+              <img
+                class="thumbnail"
+                src="img/memorygame.jpg"
+                alt="restaurant app"
+              />
+              <div class="projectTitles">
+                <h3 class="appTitle">Memory Game <br />(Sept. 2018)</h3>
+
+                <a
+                  href="https://www.themattperkins.com/JS-Memory-Game/"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Mattperkinsee/JS-Memory-Game"
+                  target="_blank"
+                >
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+            <div class="secondApp animated slideInUp">
+              <img class="thumbnail" src="img/feedtest.jpg" alt="feedreader" />
+              <div class="projectTitles">
+                <h3 class="appTitle">Feedreader Tester <br />(Oct. 2018)</h3>
+                <a
+                  href="https://www.themattperkins.com/Feedreader-Tester/"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Mattperkinsee/Feedreader-Tester"
+                  target="_blank"
+                >
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="thirdApp animated rotateInUpLeft">
+              <img
+                class="thumbnail"
+                src="img/froggergame.jpg"
+                alt="frogger game"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">Frogger Game <br />(Oct. 2018)</h3>
+                <a
+                  href="https://www.themattperkins.com/JS-Frogger-Game"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Mattperkinsee/JS-Frogger-Game"
+                  target="_blank"
+                >
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="featuredWork">
+            <div class="firstApp animated rotateInUpRight">
+              <img
+                class="thumbnail"
+                src="img/restaurantreview.jpg"
+                alt="restaurant app"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">Restaurant App <br />(Nov. 2018)</h3>
+                <a
+                  href="https://www.themattperkins.com/Restaurant-App"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Mattperkinsee/Restaurant-App"
+                  target="_blank"
+                >
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+            <div class="secondApp animated slideInUp">
+              <img
+                class="thumbnail"
+                src="img/sky.jpg"
+                alt="skydive wordpress site"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">
+                  Skydive Wordpress Site <br />(Dec. 2018)
+                </h3>
+                <a
+                  href="https://www.skydivelittlewashington.com/"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="thirdApp animated rotateInUpLeft">
+              <img
+                class="thumbnail"
+                src="img/rp.jpg"
+                alt="photo booth wordpress site"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">
+                  Photo Booth Wordpress <br />(Jan. 2019)
+                </h3>
+                <a href="https://www.rpphotobooths.com/" target="_blank">
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="featuredWork">
+            <div class="firstApp animated rotateInUpRight">
+              <img
+                class="thumbnail"
+                src="img/odfl.jpg"
+                alt="old dominion website"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">ODFL <br />(Jan. 2019)</h3>
+                <a
+                  href="https://www.themattperkins.com/ODFL/Home"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a href="https://github.com/Mattperkinsee/ODFL" target="_blank">
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="secondApp animated slideInUp">
+              <img
+                class="thumbnail"
+                src="img/counter.jpg"
+                alt="react counter app"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">React Counter App <br />(March. 2019)</h3>
+                <a
+                  href="https://www.themattperkins.com/React-Counter-App/build"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Mattperkinsee/counter-app"
+                  target="_blank"
+                >
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="thirdApp animated rotateInUpLeft">
+              <img
+                class="thumbnail"
+                src="img/silversky.jpg"
+                alt="silver sky organics wordpress site"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">
+                  Silver Sky Organics Wordpress <br />(Jan. 2019)
+                </h3>
+                <a href="https://www.silverskyorganics.com" target="_blank">
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="featuredWork">
+            <div class="firstApp animated rotateInUpRight">
+              <img
+                class="thumbnail"
+                src="img/weatherapp.jpg"
+                alt="weather app"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">React Weather App <br />(April 2019)</h3>
+                <a
+                  href="https://www.themattperkins.com/weather-app/build"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Mattperkinsee/weather-app"
+                  target="_blank"
+                >
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- <div class="secondApp animated slideInUp">
+              <img
+                class="thumbnail"
+                src="img/counter.jpg"
+                alt="react counter app"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">React Counter App <br />(March. 2019)</h3>
+                <a
+                  href="https://www.themattperkins.com/React-Counter-App/build"
+                  target="_blank"
+                >
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Mattperkinsee/counter-app"
+                  target="_blank"
+                >
+                  <button type="button" id="gitBtn">GitHub</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="thirdApp animated rotateInUpLeft">
+              <img
+                class="thumbnail"
+                src="img/silversky.jpg"
+                alt="silver sky organics wordpress site"
+              />
+
+              <div class="projectTitles">
+                <h3 class="appTitle">
+                  Silver Sky Organics Wordpress <br />(Jan. 2019)
+                </h3>
+                <a href="https://www.silverskyorganics.com" target="_blank">
+                  <button type="button" id="demoBtn">Demo</button>
+                </a>
+              </div>
+            </div> -->
+          </section>
+        </section>
+      </div>
+      <i
+        id="scrollTopBtn"
+        title="Go to top"
+        onclick="topFunction()"
+        class="fa fa-arrow-up"
+      ></i>
     </main>
-</body>
+  </body>
 
-<footer>&copy; Copyright <span style="color:#efd04f;">2019</span> Matthew Perkins</footer>
-
+  <footer>
+    &copy; Copyright <span style="color:#efd04f;">2019</span> Matthew Perkins
+  </footer>
 </html>
