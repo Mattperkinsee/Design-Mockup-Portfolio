@@ -124,12 +124,7 @@ a.fa.fa-phone:hover {
     text-align: right;
 }
 
-.memoryGame,
-.froggerGame,
-.feedReader,
-.restaurantApp,
-.skydive,
-.photobooth,
+
 .thumbnail{
     width: 100%;
     max-width:200px;
@@ -139,12 +134,8 @@ a.fa.fa-phone:hover {
     transition: all .2s ease-in-out;
 }
 
-.memoryGame:hover,
-.froggerGame:hover,
-.feedReader:hover,
-.restaurantApp:hover,
-.skydive:hover,
-.photobooth:hover {
+
+.thumbnail:hover{
     transform: scale(1.1);
 }
 
@@ -451,13 +442,12 @@ i.fa.fa-bars:hover {
 /*Format for tablets*/
 
 @media only screen and (min-width:768px) {
-    .firstApp, .secondApp, .thirdApp, .fourthApp, .fifthApp, .sixthApp {
+    .firstApp, .secondApp, .thirdApp {
         width: 30%;
     }
     .firstApp,
-    .secondApp,
-    .fourthApp,
-    .fifthApp {
+    .secondApp
+     {
         margin-right: 5%;
     }
     section.featuredWork_title {
@@ -555,15 +545,7 @@ i.fa.fa-bars:hover {
         max-width: 140px;
         float: none;
     }
-    .memoryGame,
-    .froggerGame,
-    .feedReader,
-    .restaurantApp,
-    .skydive,
-    .photobooth {
-        max-height: 300px;
-        max-width: 300px;
-    }
+    
     section.featuredWork {
         text-align: center;
         justify-content: center;
